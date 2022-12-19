@@ -19,3 +19,4 @@ setInterval(tick, 1000);
 export default Clock2
 
 
+// using class component using props

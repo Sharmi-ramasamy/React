@@ -2,14 +2,34 @@ import logo from './logo.svg';
 import './App.css';
 import Home from'./Home.js';
 import Product from './Product.js';
-import Color from './Color';
-import Welcome from './Welcome';
-import Car from './Car';
-import Garage from './Car';
-import Cars from './Cars';
-import Clock from './Clock';
-import Clock2 from './Clock2';
-import Clock3 from './Clock3';
+import Color from './Color.js';
+import Welcome from './Welcome.js';
+import Car from './Car.js';
+import Garage from './Car.js';
+import Cars from './Cars.js';
+import Clock from './Clock.js';
+import Clock2 from './Clock2.js';
+import Clock3 from './Clock3.js';
+
+import Task  from './Task.js';
+import FunctionClick from './FunctionClick.js';
+import ClassClick  from './ClassClick.js';
+import EventBind from './EventBind.js'
+import EventBind2 from './EventBind2.js';
+import EventBind3 from './EventBind3.js';
+import EventBind4 from './EventBind4.js';
+import ConditionalRendering from './ConditionalRendering';
+import ConditionalRendering2 from './ConditionalRendering2';
+import ConditionalRendering3 from './ConditionalRendering3';
+import ConditionalRendering4 from './ConditionalRendering4';
+// import ConditionalExample from './ConditionalExample';
+import ListRendering from './ListRendering';
+import ListRendering2 from './ListRendering2.js';
+import NameList from './NameList';
+import ListRenderingExample from './ListRenderingExample';
+import Task2 from './Task2.js';
+
+
 // import Demo from './Demo.js';
 
 function App() {
@@ -25,15 +45,41 @@ function App() {
      <Color/>
      {/* <Demo/> */}
 
-    <Welcome name="Sara"/>
-    <Welcome name="Thara"/>     
+    {/* <Welcome name="Sara"/> */}
+    {/* <Welcome name="Thara"/>      */}
     {/* composing component */}
   
 
-     <Cars brand="Ford"/>
-     <Clock date={new Date()}/>
+     {/* <Cars brand="Ford"/> */}
+     {/* <Clock date={new Date()}/> */}
      {/* <Clock2 date={new Date()}/> */}
      {/* <Clock3/> */}
+
+<Task/> <br/>
+
+<FunctionClick/>  <br/>
+<ClassClick/> <br/> <br/>
+<EventBind/>  <br/> <br/>
+<EventBind2/>  <br/> <br/>
+<EventBind3/>  <br/> <br/>
+<EventBind4/> <br/> <br/>
+<ConditionalRendering/> <br/> <br/>
+<ConditionalRendering2/> <br/> <br/>
+<ConditionalRendering3/> <br/> <br/>
+<ConditionalRendering4/> <br/> <br/>
+{/* <ConditionalExample/> <br/> <br/> */}
+<ListRendering/> <br/> <br/> 
+<ListRendering2/> <br/> <br/> 
+{/* <NameList/> <br/> <br/>  */}
+<ListRenderingExample/>
+<Task2/>
+
+
+
+
+
+
+
 
     </div>
   );

@@ -22,3 +22,6 @@ export class Clock3 extends Component {
     setInterval(ticks, 1000);
     
 export default Clock3
+
+
+// using class component using state

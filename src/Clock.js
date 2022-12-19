@@ -14,5 +14,4 @@ export default function Clock(props) {
       
       setInterval(tickk, 2000);
       
-
-     
+// using function component
