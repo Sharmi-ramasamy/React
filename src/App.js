@@ -28,6 +28,13 @@ import ListRendering2 from './ListRendering2.js';
 import NameList from './NameList';
 import ListRenderingExample from './ListRenderingExample';
 import Task2 from './Task2.js';
+import ListandKeys from './ListandKeys';
+import Form from './Form';
+
+
+import Forms from './Forms.js';
+import Forms2 from './Forms2';
+import LiftingStateup2 from './LiftingStateup2';
 
 
 // import Demo from './Demo.js';
@@ -51,28 +58,34 @@ function App() {
   
 
      {/* <Cars brand="Ford"/> */}
-     {/* <Clock date={new Date()}/> */}
+     <Clock date={new Date()}/>
      {/* <Clock2 date={new Date()}/> */}
      {/* <Clock3/> */}
 
-<Task/> <br/>
+<Task/> <br/><hr/>
 
 <FunctionClick/>  <br/>
-<ClassClick/> <br/> <br/>
+<ClassClick/> <br/> <br/> <hr/>
 <EventBind/>  <br/> <br/>
 <EventBind2/>  <br/> <br/>
 <EventBind3/>  <br/> <br/>
-<EventBind4/> <br/> <br/>
+<EventBind4/> <br/> <br/><hr/>
 <ConditionalRendering/> <br/> <br/>
 <ConditionalRendering2/> <br/> <br/>
 <ConditionalRendering3/> <br/> <br/>
-<ConditionalRendering4/> <br/> <br/>
+<ConditionalRendering4/> <br/> <br/><hr/>
 {/* <ConditionalExample/> <br/> <br/> */}
 <ListRendering/> <br/> <br/> 
 <ListRendering2/> <br/> <br/> 
 {/* <NameList/> <br/> <br/>  */}
-<ListRenderingExample/>
-<Task2/>
+<ListRenderingExample/> <br/> <br/> <hr/>
+<Task2/> <br/> <br/> <hr/>
+{/* <ListandKeys/> <br/> <br/>  */}
+{/* <Form/> */}
+
+<Forms/><hr/>
+<Forms2/><br/><hr/>
+<LiftingStateup2/>
 
 
 

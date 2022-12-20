@@ -1,4 +1,5 @@
 // Arrow function in render()
+// while using arrow function in render(). no need of bind(this)
 
 import React, { Component } from 'react'
 
@@ -20,7 +21,7 @@ export class EventBind3 extends Component {
         <div>
       <div> Arrow function in render method </div>
       <div> {this.state.message} </div>
-      <button onClick={()=>{this.changeHandler()}}> Click </button>
+      <button onClick={()=>{this.changeHandler()}}> Click </button>              
       </div>
     )
   }

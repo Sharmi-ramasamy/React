@@ -4,21 +4,33 @@ export class Task2 extends Component {
     constructor(){
         super()
         this.state={
-            flag:true
+            flag:""
         }
+        this.change = this.change.bind(this)
+        this.changeClick = this.changeClick.bind(this)
     }
+   
     change() {
         console.log('TRUE');
+        this.setState({
+            flag:true
+        })
+        
     }
     changeClick() {
         console.log('FALSE');
+        this.setState({
+            flag:false
+        })
+        
     }
 
 render() {
     return (
         <div>
-            <button onClick={this.change}> YES </button> <br/> <br/>
-            <button onClick={this.changeClick}> NO </button>
+            
+            <button onClick={this.change}>{this.state.flag? 'True':'Yes'}</button> <br/> <br/>
+            <button onClick={this.changeClick}> {this.state.flag? 'False':'No'} </button>
         </div>
     )
 }
