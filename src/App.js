@@ -35,6 +35,12 @@ import Form from './Form';
 import Forms from './Forms.js';
 import Forms2 from './Forms2';
 import LiftingStateup2 from './LiftingStateup2';
+import Composition1 from './Composition1';
+import ParentComponent from './ParentComponent';
+import ProptypesExample from './ProptypesExample';
+import ProptypesExample1 from './ProptypesExample1';
+import Composition2 from './Composition2';
+import ProptypesExample2 from './Proptypesxample2';
 
 
 // import Demo from './Demo.js';
@@ -85,10 +91,12 @@ function App() {
 
 <Forms/><hr/>
 <Forms2/><br/><hr/>
-<LiftingStateup2/>
-
-
-
+<LiftingStateup2/><br/><hr/>
+<Composition2/> <br/><hr/>
+<ParentComponent/> <br/><hr/>
+<ProptypesExample name='Aspire'/>
+<ProptypesExample1 name="ABC"/>
+<ProptypesExample2 name="MS"/>
 
 
 

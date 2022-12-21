@@ -11,7 +11,8 @@ export class ClassClick extends Component {
         return(
             <div>
                 <div> Class Click- Event handler</div> <br/>
-            <button onClick={this.clickHandler.bind(this)}> Click Here </button>
+            <button onClick={this.clickHandler.bind(this)}> Click Here </button>      
+              {/* binding in render() method */}
             </div>
         )
     }

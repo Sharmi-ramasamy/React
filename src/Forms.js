@@ -35,7 +35,7 @@ export class Forms extends Component {
         return(
             // <form onSubmit={this.handleSubmit}>     
             <form>
-                <h2> Forms </h2>
+                <h4> Forms-Controlled Form</h4>
             <div>
                 <label> Username: </label>
                 <input type="text" value={this.state.username} onChange={this.handleUsername}/>

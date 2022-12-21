@@ -28,7 +28,6 @@ export class Task2 extends Component {
 render() {
     return (
         <div>
-            
             <button onClick={this.change}>{this.state.flag? 'True':'Yes'}</button> <br/> <br/>
             <button onClick={this.changeClick}> {this.state.flag? 'False':'No'} </button>
         </div>

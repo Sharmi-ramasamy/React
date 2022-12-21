@@ -15,11 +15,13 @@ export class Forms2 extends Component {
 
   render() {
     return (
+      
       <form onSubmit={this.handleSubmit}>
+        <h4> Uncontrolled Form </h4>
         <label>
           Name:
           <input type="text" ref={this.input} />
-        </label>
+        </label><br/><br/>
         <input type="submit" value="Submit" />
       </form>
     )
