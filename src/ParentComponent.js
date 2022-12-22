@@ -1,3 +1,6 @@
+// Composition example 2
+// in inheritance child class is extended to parent class
+
 import React, { Component } from 'react'
 import ChildComponent from './ChildComponent'
 

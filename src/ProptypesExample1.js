@@ -1,9 +1,12 @@
+// typechecking proptypes in functional compnent
+
 import React from 'react'
 import PropTypes from 'prop-types'
 
 export function ProptypesExample1({name}) {
   return (
     <div>
+      <h3> typechecking proptypes in functional compnent  </h3>
         <p> Hi,{name}</p>
     </div>
   )

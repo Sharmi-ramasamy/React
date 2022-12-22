@@ -40,7 +40,18 @@ import ParentComponent from './ParentComponent';
 import ProptypesExample from './ProptypesExample';
 import ProptypesExample1 from './ProptypesExample1';
 import Composition2 from './Composition2';
-import ProptypesExample2 from './Proptypesxample2';
+import ProptypesExample2 from './ProptypesExample2';
+
+
+import RefsDemo from './RefsDemo';
+import CallBackRefs from './CallBackRefs.js'
+import ForwardRefParent from './ForwardRefParent';
+import ProptypesExample3 from './ProptypesExample3';
+import ProptypesExample4 from './ProptypesExample4';
+import ComponentC from './ComponentC';
+import { UserProvider } from './UserContext';
+import CodeSplittng from './CodeSplitting';
+
 
 
 // import Demo from './Demo.js';
@@ -64,7 +75,7 @@ function App() {
   
 
      {/* <Cars brand="Ford"/> */}
-     <Clock date={new Date()}/>
+     {/* <Clock date={new Date()}/> */}
      {/* <Clock2 date={new Date()}/> */}
      {/* <Clock3/> */}
 
@@ -72,32 +83,53 @@ function App() {
 
 <FunctionClick/>  <br/>
 <ClassClick/> <br/> <br/> <hr/>
+
 <EventBind/>  <br/> <br/>
 <EventBind2/>  <br/> <br/>
 <EventBind3/>  <br/> <br/>
 <EventBind4/> <br/> <br/><hr/>
+
 <ConditionalRendering/> <br/> <br/>
 <ConditionalRendering2/> <br/> <br/>
 <ConditionalRendering3/> <br/> <br/>
 <ConditionalRendering4/> <br/> <br/><hr/>
 {/* <ConditionalExample/> <br/> <br/> */}
+
 <ListRendering/> <br/> <br/> 
 <ListRendering2/> <br/> <br/> 
 {/* <NameList/> <br/> <br/>  */}
 <ListRenderingExample/> <br/> <br/> <hr/>
+
 <Task2/> <br/> <br/> <hr/>
 {/* <ListandKeys/> <br/> <br/>  */}
-{/* <Form/> */}
 
+{/* <Form/> */}
 <Forms/><hr/>
 <Forms2/><br/><hr/>
+
 <LiftingStateup2/><br/><hr/>
+
 <Composition2/> <br/><hr/>
 <ParentComponent/> <br/><hr/>
-<ProptypesExample name='Aspire'/>
-<ProptypesExample1 name="ABC"/>
-<ProptypesExample2 name="MS"/>
 
+{/* <ProptypesExample name={123}/>   throws warning because number given instead of string*/}
+<ProptypesExample name='ABC' age={25}/>  
+<ProptypesExample1 name="Aspire"/>  <br/>
+
+<ProptypesExample2/> child,sss <br/>  
+
+<ProptypesExample3/> <br/>
+{/* <ProptypesExample4/> */}
+
+<RefsDemo/> 
+<CallBackRefs/><br/><hr/>
+<ForwardRefParent/> 
+
+<UserProvider value="abc" num={27}>
+<ComponentC/>
+</UserProvider>
+
+<CodeSplittng/>
 
 
 
