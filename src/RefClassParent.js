@@ -1,6 +1,6 @@
 // Ref parent component - Refclass.js
 import React, { Component } from 'react'
-
+import RefClass from './RefClass.js'
 export class RefClassParent extends Component {
     constructor(props) {
       super(props)
@@ -12,8 +12,7 @@ export class RefClassParent extends Component {
   render() {
     return (
       <div>
-
-      <RefClass ref={this.componentRef}/>
+      <RefClass ref={this.componentRef}/> <br/>
         <button onClick={this.clickHandler}> Focus Input </button>
       </div>
     )

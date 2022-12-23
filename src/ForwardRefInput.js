@@ -1,10 +1,20 @@
 import React from 'react'
 
-export default function ForwardRefInput() {
-  return (
+// export default function ForwardRefInput() {
+//   return (
+//     <div>
+//       <h3> Forwarding Ref </h3>
+//         <input type="text"/>
+//     </div>
+//   )
+// }
+
+const ForwardRefInput=React.forwardRef((props,ref)=> {
+  return(
     <div>
-      <h3> Forwarding Ref </h3>
-        <input type="text"/>
+      <input type='text' ref={ref}/>
     </div>
   )
-}
+})
+
+export default ForwardRefInput

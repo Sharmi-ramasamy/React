@@ -16,17 +16,18 @@ export default function ProptypesExample4({name,time}) {
 }
 
 ProptypesExample4.propTypes={
-    name:PropTypes.string
+    name:PropTypes.string,
+    time:PropTypes.number
 }
-ProptypesExample4.propTypes={
-    time:ProptypesExample4.number
-}
+// ProptypesExample4.propTypes={
+//     time:PropTypes.number
+// }
 
 ProptypesExample4.defaultProps={
   name:'Sir',
-  // time:10,
-}
-ProptypesExample4.defaultProps={
-  // name:'Sir',
   time:10,
 }
+// ProptypesExample4.defaultProps={
+//   // name:'Sir',
+//   time:10,
+// }

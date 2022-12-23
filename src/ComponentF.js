@@ -8,10 +8,12 @@ export class ComponentF extends Component {
       
 <UserConsumer>
   {
-  (username,number) =>{
+  (username) =>{
       return (
-      <div> Hello {username} <br/>
-         I'm {number}
+      <div> 
+        <strong> Using Context </strong>
+        <p> Hello {username[0].a} <br/>
+         I'm {username[0].b} </p>
       </div>
       )
   }

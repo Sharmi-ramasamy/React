@@ -12,7 +12,8 @@ export class RefClass extends Component {
   render() {
     return (
       <div>
-        <input type="text" ref={this.inputRef}/>
+        <h3> Passing ref to class component </h3>
+        <input type="text" ref={this.inputRef}/> 
       </div>
     )
   }

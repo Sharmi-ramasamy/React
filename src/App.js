@@ -51,6 +51,14 @@ import ProptypesExample4 from './ProptypesExample4';
 import ComponentC from './ComponentC';
 import { UserProvider } from './UserContext';
 import CodeSplittng from './CodeSplitting';
+import RefClassParent from './RefClassParent';
+import Fragments from './Fragment';
+import Fragment from './Fragment';
+import Fragment2 from './Fragment2';
+import ErrorBoundaryExample from './ErrorBoundaryExample';
+import ErrorBoundary from './ErrorBoundary';
+import Table from './Table';
+import HOC from './HOC';
 
 
 
@@ -66,7 +74,7 @@ function App() {
      <Home name="Seethu" position="HR">  </Home>
      <Home name="Monu" position="">  </Home>
      <Product name="Android" price="50K"/> */}
-     <Color/>
+     {/* <Color/><hr/> */}
      {/* <Demo/> */}
 
     {/* <Welcome name="Sara"/> */}
@@ -116,22 +124,40 @@ function App() {
 <ProptypesExample name='ABC' age={25}/>  
 <ProptypesExample1 name="Aspire"/>  <br/>
 
-<ProptypesExample2/> child,sss <br/>  
+<ProptypesExample2><div>child,sss</div></ProptypesExample2>  <br/>  
 
 <ProptypesExample3/> <br/>
-{/* <ProptypesExample4/> */}
+<ProptypesExample4/><br/><hr/>               
 
 <RefsDemo/> 
 <CallBackRefs/><br/><hr/>
-<ForwardRefParent/> 
+<RefClassParent/>
 
-<UserProvider value="abc" num={27}>
+<ForwardRefParent/> <br/><hr/>
+
+<UserProvider value={[{a:"abc",b:'40'}]}>
 <ComponentC/>
 </UserProvider>
 
-<CodeSplittng/>
+<CodeSplittng/> <br/><hr/>
+<Fragment/> 
+<Fragment2/> 
+<Table/> <br/><hr/>
+
+<ErrorBoundary>
+<ErrorBoundaryExample name='Aspire'/>
+</ErrorBoundary>
+
+<ErrorBoundary>
+<ErrorBoundaryExample name='System'/>
+</ErrorBoundary>
+
+<ErrorBoundary>
+{/* <ErrorBoundaryExample name='abc'/>   */}
+</ErrorBoundary>
 
 
+{/* <HOC/> */}
 
 
     </div>

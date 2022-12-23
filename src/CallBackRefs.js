@@ -2,7 +2,7 @@
 // oldest approach to create ref.
 import React, { Component } from 'react'
 
-export class RefsDemo extends Component {
+export class CallBackRefs extends Component {
     constructor(props) {
       super(props)
       this.callbackref=null
@@ -29,4 +29,4 @@ export class RefsDemo extends Component {
   }
 }
 
-export default RefsDemo
+export default CallBackRefs

@@ -1,4 +1,4 @@
-// Uncontrolled Components
+// Uncontrolled Components using ref
 
 import React, { Component } from 'react'
 
