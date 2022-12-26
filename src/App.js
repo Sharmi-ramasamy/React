@@ -59,6 +59,21 @@ import ErrorBoundaryExample from './ErrorBoundaryExample';
 import ErrorBoundary from './ErrorBoundary';
 import Table from './Table';
 import HOC from './HOC';
+import PortalDemo from './PortalDemo';
+import LifecycleMountA from './LifecycleMountA';
+import LifecycleUpdateA from './LifecycleUpdateA';
+import Nameslist from './Nameslist';
+import NamesList1 from './NamesList1';
+import NamesList2 from './NamesList2';
+import NameList3 from './NamesList3';
+import Names from './Names';
+
+import ClassState from './Hooks/ClassState';
+import StateHook from './Hooks/StateHook';
+import HookCounter from './Hooks/StateHookCounter';
+import StateHookObject from './Hooks/StateHookObject';
+import StateHookArray from './Hooks/StateHookArray';
+import StateColor from './Hooks/StateColor';
 
 
 
@@ -154,11 +169,27 @@ function App() {
 
 <ErrorBoundary>
 {/* <ErrorBoundaryExample name='abc'/>   */}
-</ErrorBoundary>
+</ErrorBoundary><br/><hr/> 
 
 
-{/* <HOC/> */}
+{/* <HOC/>  <br/><hr/>  */}
 
+<PortalDemo/>
+{/* <LifecycleMountA/> */}
+{/* <LifecycleUpdateA/> */}
+
+{/* <Nameslist/> <br/><hr/>
+<NamesList1/> <br/><hr/>
+<NamesList2/> <br/><hr/>
+<NameList3/>
+<Names/> */}
+
+{/* <ClassState/> */}
+<StateHook/> <br/><hr/>
+<HookCounter/> <br/><hr/>
+<StateHookObject/> <br/><hr/>
+<StateHookArray/> <br/><hr/>
+<StateColor/> <br/><hr/>
 
     </div>
   );

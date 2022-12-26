@@ -1,8 +1,6 @@
-// Example for list rendering
-
 import React from 'react'
 
-export default function NameList() {
+export default function NameList3() {
 
 const persons=[
   {
