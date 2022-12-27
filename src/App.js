@@ -49,7 +49,7 @@ import ForwardRefParent from './ForwardRefParent';
 import ProptypesExample3 from './ProptypesExample3';
 import ProptypesExample4 from './ProptypesExample4';
 import ComponentC from './ComponentC';
-import { UserProvider } from './UserContext';
+import { UserConsumer, UserProvider } from './UserContext';
 import CodeSplittng from './CodeSplitting';
 import RefClassParent from './RefClassParent';
 import Fragments from './Fragment';
@@ -68,13 +68,35 @@ import NamesList2 from './NamesList2';
 import NameList3 from './NamesList3';
 import Names from './Names';
 
-import ClassState from './Hooks/ClassState';
-import StateHook from './Hooks/StateHook';
-import HookCounter from './Hooks/StateHookCounter';
-import StateHookObject from './Hooks/StateHookObject';
-import StateHookArray from './Hooks/StateHookArray';
-import StateColor from './Hooks/StateColor';
+import ClassState from './StateHooks/ClassState';
+import StateHook from './StateHooks/StateHook';
+import HookCounter from './StateHooks/StateHookCounter';
+import StateHookObject from './StateHooks/StateHookObject';
+import StateHookArray from './StateHooks/StateHookArray';
+import StateColor from './StateHooks/StateColor';
+import StateExample from './StateHooks/StateExample';
+import MultiStateExample from './StateHooks/MultiStateExample';
+import StateObjectDemo from './StateHooks/StateObjectDemo';
+import StateObjectUpdation from './StateHooks/StateObjectUpdation';
 
+
+import Timer from './EffectHook/Timer';
+import Counter from './EffectHook/Counter';
+import CleanTimer from './EffectHook/CleanTimer';
+import UseEffect from './EffectHook/UseEffect';
+
+// import ComponentCC from './ContextHook/ComponentCC';
+// import React from 'react'
+// import ComponentX from './ContextHook/ComponentX';
+// // StateHookExample
+// import Component1 from './StateHookExample/Component1';
+
+// // ComponentCC 
+// export const EmployeeContext=React.createContext();
+// export const DomainContext=React.createContext();
+// // ComponentX
+// export const userContext=React.createContext();
+// export const courseContext=React.createContext();
 
 
 // import Demo from './Demo.js';
@@ -102,7 +124,7 @@ function App() {
      {/* <Clock2 date={new Date()}/> */}
      {/* <Clock3/> */}
 
-<Task/> <br/><hr/>
+{/* <Task/> <br/><hr/>
 
 <FunctionClick/>  <br/>
 <ClassClick/> <br/> <br/> <hr/>
@@ -110,33 +132,33 @@ function App() {
 <EventBind/>  <br/> <br/>
 <EventBind2/>  <br/> <br/>
 <EventBind3/>  <br/> <br/>
-<EventBind4/> <br/> <br/><hr/>
-
+<EventBind4/> <br/> <br/><hr/> */}
+{/* 
 <ConditionalRendering/> <br/> <br/>
 <ConditionalRendering2/> <br/> <br/>
 <ConditionalRendering3/> <br/> <br/>
-<ConditionalRendering4/> <br/> <br/><hr/>
+<ConditionalRendering4/> <br/> <br/><hr/> */}
 {/* <ConditionalExample/> <br/> <br/> */}
-
+{/* 
 <ListRendering/> <br/> <br/> 
-<ListRendering2/> <br/> <br/> 
+<ListRendering2/> <br/> <br/>  */}
 {/* <NameList/> <br/> <br/>  */}
-<ListRenderingExample/> <br/> <br/> <hr/>
+{/* <ListRenderingExample/> <br/> <br/> <hr/> */}
 
-<Task2/> <br/> <br/> <hr/>
+{/* <Task2/> <br/> <br/> <hr/> */}
 {/* <ListandKeys/> <br/> <br/>  */}
 
 {/* <Form/> */}
-<Forms/><hr/>
+{/* <Forms/><hr/>
 <Forms2/><br/><hr/>
 
 <LiftingStateup2/><br/><hr/>
 
 <Composition2/> <br/><hr/>
-<ParentComponent/> <br/><hr/>
+<ParentComponent/> <br/><hr/> */}
 
 {/* <ProptypesExample name={123}/>   throws warning because number given instead of string*/}
-<ProptypesExample name='ABC' age={25}/>  
+{/* <ProptypesExample name='ABC' age={25}/>  
 <ProptypesExample1 name="Aspire"/>  <br/>
 
 <ProptypesExample2><div>child,sss</div></ProptypesExample2>  <br/>  
@@ -165,16 +187,16 @@ function App() {
 
 <ErrorBoundary>
 <ErrorBoundaryExample name='System'/>
-</ErrorBoundary>
+</ErrorBoundary> */}
 
-<ErrorBoundary>
+{/* <ErrorBoundary> */}
 {/* <ErrorBoundaryExample name='abc'/>   */}
-</ErrorBoundary><br/><hr/> 
+{/* </ErrorBoundary><br/><hr/>  */}
 
 
 {/* <HOC/>  <br/><hr/>  */}
 
-<PortalDemo/>
+{/* <PortalDemo/> */}
 {/* <LifecycleMountA/> */}
 {/* <LifecycleUpdateA/> */}
 
@@ -184,12 +206,49 @@ function App() {
 <NameList3/>
 <Names/> */}
 
+{/* Using State hook */}
 {/* <ClassState/> */}
-<StateHook/> <br/><hr/>
+{/* <StateHook/> <br/><hr/>
 <HookCounter/> <br/><hr/>
 <StateHookObject/> <br/><hr/>
 <StateHookArray/> <br/><hr/>
 <StateColor/> <br/><hr/>
+
+<StateExample/> <br/><hr/>
+<MultiStateExample/> <br/><hr/>
+<StateObjectDemo/> <br/><hr/>
+<StateObjectUpdation/> <br/><hr/> */}
+
+{/* Normal Context */}
+ {/* <userContext.Provider value={'ABC'}>
+    <courseContext.Provider value={'ReactJS'}>
+        <ComponentCC/> <br/><hr/>
+    </courseContext.Provider>
+ </userContext.Provider>
+
+//  using context hooks
+<EmployeeContext.Provider value='MSP'>
+  <DomainContext.Provider value="HR">
+        <ComponentX/><br/><hr/>
+  </DomainContext.Provider>
+</EmployeeContext.Provider> */}
+
+
+{/* State hook Example */}
+{/* <Component1/>  <br/><hr/> */}
+
+
+{/* Using Effect hook */}
+{/* <Timer/>  <br/><hr/>
+<Counter/> <br/><hr/>
+<CleanTimer/> <br/><hr/> */}
+
+<UseEffect/>
+
+
+
+
+
 
     </div>
   );

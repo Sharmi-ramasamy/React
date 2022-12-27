@@ -5,7 +5,7 @@ export default function StateColor() {
       
     return (
       <div>
-        <h1>My favorite color is {color}!</h1>
+        <h1>My favorite color is {color}!</h1>      
         <button onClick={() => setColor("Blue")}> Blue </button>
         <button onClick={() => setColor("Green")}> Green </button>
         <button onClick={() => setColor("Pink")}> Pink </button>
