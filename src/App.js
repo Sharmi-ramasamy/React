@@ -58,7 +58,7 @@ import Fragment2 from './Fragment2';
 import ErrorBoundaryExample from './ErrorBoundaryExample';
 import ErrorBoundary from './ErrorBoundary';
 import Table from './Table';
-import HOC from './HOC';
+
 import PortalDemo from './PortalDemo';
 import LifecycleMountA from './LifecycleMountA';
 import LifecycleUpdateA from './LifecycleUpdateA';
@@ -84,19 +84,24 @@ import Timer from './EffectHook/Timer';
 import Counter from './EffectHook/Counter';
 import CleanTimer from './EffectHook/CleanTimer';
 import UseEffect from './EffectHook/UseEffect';
+import MainComponent from './CallbackHook/MainComponent';
+import Add from './Add';
+import AddTwo from './AddTwo';
 
-// import ComponentCC from './ContextHook/ComponentCC';
-// import React from 'react'
-// import ComponentX from './ContextHook/ComponentX';
+import ComponentCC from './ContextHook/ComponentCC';
+import React from 'react'
+import ComponentX from './ContextHook/ComponentX';
+
 // // StateHookExample
 // import Component1 from './StateHookExample/Component1';
 
-// // ComponentCC 
-// export const EmployeeContext=React.createContext();
-// export const DomainContext=React.createContext();
-// // ComponentX
-// export const userContext=React.createContext();
-// export const courseContext=React.createContext();
+// // ComponentX 
+export const EmployeeContext=React.createContext();
+export const DomainContext=React.createContext();
+
+// // ComponentCC
+export const userContext=React.createContext();
+export const courseContext=React.createContext();
 
 
 // import Demo from './Demo.js';
@@ -124,23 +129,25 @@ function App() {
      {/* <Clock2 date={new Date()}/> */}
      {/* <Clock3/> */}
 
-{/* <Task/> <br/><hr/>
+{/* <Task/> <br/><hr/> */}
 
-<FunctionClick/>  <br/>
-<ClassClick/> <br/> <br/> <hr/>
+{/* <FunctionClick/>  <br/>
+<ClassClick/> <br/> <br/> <hr/> */}
 
-<EventBind/>  <br/> <br/>
+{/* <EventBind/>  <br/> <br/>
 <EventBind2/>  <br/> <br/>
 <EventBind3/>  <br/> <br/>
 <EventBind4/> <br/> <br/><hr/> */}
-{/* 
-<ConditionalRendering/> <br/> <br/>
+
+
+{/* <ConditionalRendering/> <br/> <br/>
 <ConditionalRendering2/> <br/> <br/>
 <ConditionalRendering3/> <br/> <br/>
 <ConditionalRendering4/> <br/> <br/><hr/> */}
+
 {/* <ConditionalExample/> <br/> <br/> */}
-{/* 
-<ListRendering/> <br/> <br/> 
+
+{/* <ListRendering/> <br/> <br/> 
 <ListRendering2/> <br/> <br/>  */}
 {/* <NameList/> <br/> <br/>  */}
 {/* <ListRenderingExample/> <br/> <br/> <hr/> */}
@@ -148,44 +155,45 @@ function App() {
 {/* <Task2/> <br/> <br/> <hr/> */}
 {/* <ListandKeys/> <br/> <br/>  */}
 
-{/* <Form/> */}
-{/* <Forms/><hr/>
-<Forms2/><br/><hr/>
+{/* <Form/>
+<Forms/><hr/>
+<Forms2/><br/><hr/> */}
 
-<LiftingStateup2/><br/><hr/>
+{/* <LiftingStateup2/><br/><hr/> */}
 
-<Composition2/> <br/><hr/>
+{/* <Composition2/> <br/><hr/>
 <ParentComponent/> <br/><hr/> */}
 
-{/* <ProptypesExample name={123}/>   throws warning because number given instead of string*/}
+{/* <ProptypesExample name={123}/>   throws warning because number given instead of string */}
+
 {/* <ProptypesExample name='ABC' age={25}/>  
-<ProptypesExample1 name="Aspire"/>  <br/>
+<ProptypesExample1 name="Aspire"/>  <br/> */}
 
-<ProptypesExample2><div>child,sss</div></ProptypesExample2>  <br/>  
+{/* <ProptypesExample2><div>child,sss</div></ProptypesExample2>  <br/>   */}
 
-<ProptypesExample3/> <br/>
-<ProptypesExample4/><br/><hr/>               
+{/* <ProptypesExample3/> <br/>
+<ProptypesExample4/><br/><hr/>                */}
 
-<RefsDemo/> 
+{/* <RefsDemo/> 
 <CallBackRefs/><br/><hr/>
-<RefClassParent/>
+<RefClassParent/> */}
 
-<ForwardRefParent/> <br/><hr/>
+{/* <ForwardRefParent/> <br/><hr/> */}
 
-<UserProvider value={[{a:"abc",b:'40'}]}>
+{/* <UserProvider value={[{a:"abc",b:'40'}]}>
 <ComponentC/>
-</UserProvider>
+</UserProvider> */}
 
-<CodeSplittng/> <br/><hr/>
+{/* <CodeSplittng/> <br/><hr/>
 <Fragment/> 
 <Fragment2/> 
-<Table/> <br/><hr/>
+<Table/> <br/><hr/> */}
 
-<ErrorBoundary>
+{/* <ErrorBoundary>
 <ErrorBoundaryExample name='Aspire'/>
-</ErrorBoundary>
+</ErrorBoundary> */}
 
-<ErrorBoundary>
+{/* <ErrorBoundary>
 <ErrorBoundaryExample name='System'/>
 </ErrorBoundary> */}
 
@@ -193,8 +201,6 @@ function App() {
 {/* <ErrorBoundaryExample name='abc'/>   */}
 {/* </ErrorBoundary><br/><hr/>  */}
 
-
-{/* <HOC/>  <br/><hr/>  */}
 
 {/* <PortalDemo/> */}
 {/* <LifecycleMountA/> */}
@@ -207,32 +213,35 @@ function App() {
 <Names/> */}
 
 {/* Using State hook */}
-{/* <ClassState/> */}
-{/* <StateHook/> <br/><hr/>
+
+{/* <ClassState/>
+ <StateHook/> <br/><hr/> 
 <HookCounter/> <br/><hr/>
 <StateHookObject/> <br/><hr/>
 <StateHookArray/> <br/><hr/>
-<StateColor/> <br/><hr/>
+<StateColor/> <br/><hr/> */}
 
-<StateExample/> <br/><hr/>
+{/* <StateExample/> <br/><hr/>
 <MultiStateExample/> <br/><hr/>
 <StateObjectDemo/> <br/><hr/>
-<StateObjectUpdation/> <br/><hr/> */}
+<StateObjectUpdation/> <br/><hr/>  */}
 
-{/* Normal Context */}
- {/* <userContext.Provider value={'ABC'}>
+
+ {/* Normal Context  */}
+
+  {/* <userContext.Provider value={'ABC'}>
     <courseContext.Provider value={'ReactJS'}>
         <ComponentCC/> <br/><hr/>
     </courseContext.Provider>
- </userContext.Provider>
+ </userContext.Provider> */}
 
-//  using context hooks
+ {/* using context hooks */}
+
 <EmployeeContext.Provider value='MSP'>
-  <DomainContext.Provider value="HR">
+  <DomainContext.Provider value={[{first:"HR",second:"Ui/Ux"}]}>
         <ComponentX/><br/><hr/>
   </DomainContext.Provider>
-</EmployeeContext.Provider> */}
-
+ </EmployeeContext.Provider> 
 
 {/* State hook Example */}
 {/* <Component1/>  <br/><hr/> */}
@@ -243,7 +252,12 @@ function App() {
 <Counter/> <br/><hr/>
 <CleanTimer/> <br/><hr/> */}
 
-<UseEffect/>
+<UseEffect/> <br/><hr/>
+{/* <MainComponent/> <br/><hr/>  */}
+{/* <Add/> <br/><hr/> */}
+{/* <AddTwo/> */}
+
+
 
 
 

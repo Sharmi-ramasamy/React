@@ -1,4 +1,4 @@
-// typechecking proptypes in functional compnent
+// typechecking proptypes in functional component
 
 import React from 'react'
 import PropTypes from 'prop-types'

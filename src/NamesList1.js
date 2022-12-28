@@ -6,7 +6,7 @@ export default function NamesList1() {
     <div>
         <h3><u> Type 2 </u></h3>
         {
-            names.map(name=> <h2> {name} </h2>)
+            names.map((name)=> <h2> {name} </h2>)
         }
     </div>
   )
