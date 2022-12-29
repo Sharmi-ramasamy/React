@@ -89,8 +89,14 @@ import Add from './Add';
 import AddTwo from './AddTwo';
 
 import ComponentCC from './ContextHook/ComponentCC';
-import React from 'react'
+
 import ComponentX from './ContextHook/ComponentX';
+
+import React from 'react'
+import PureComponentExample from './PureComponentExample';
+import FocusInput from './RefHook/FocusInput';
+import MemoParent from './MemoHook/MemoParent';
+
 
 // // StateHookExample
 // import Component1 from './StateHookExample/Component1';
@@ -253,10 +259,16 @@ function App() {
 <CleanTimer/> <br/><hr/> */}
 
 <UseEffect/> <br/><hr/>
-{/* <MainComponent/> <br/><hr/>  */}
+<MainComponent/> <br/><hr/> 
 {/* <Add/> <br/><hr/> */}
 {/* <AddTwo/> */}
 
+
+{/* <PureComponentExample/> */}
+{/* <FocusInput/> <br/><hr/> */}
+
+<MemoParent/> <br/><hr/>
+<FocusInput/>
 
 
 

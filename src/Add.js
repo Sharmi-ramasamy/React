@@ -8,9 +8,9 @@ export default function Add() {
    const ans = adder(num1, num2);
    return (
       <div>
-         <input placeholder="name" value={name} onChange={(e) => setName(e.target.value)}/>
-         <input placeholder="Value 1" value={num1} onChange={(e) => setNum1(e.target.value)}/>
-         <input placeholder="Value 2" value={num2} onChange={(e) => setNum2(e.target.value)}/>
+         <input placeholder="name" value={name} onChange={(event) => setName(event.target.value)}/>
+         <input placeholder="Value 1" value={num1} onChange={(event) => setNum1(event.target.value)}/>
+         <input placeholder="Value 2" value={num2} onChange={(event) => setNum2(event.target.value)}/>
          {ans}
       </div>
    );
