@@ -102,6 +102,10 @@ import CounterOne from './CustomHooks/CounterOne';
 import CounterTwo from './CustomHooks/CounterTwo';
 import UserForm from './CustomHooks/UserForm';
 
+import DataFetchingOne from './Axios/DataFetchingOne';
+import DataFetchingTwo from './Axios/DataFetchingTwo';
+import DataFetchingThree from './Axios/DataFetchingThree';
+
 
 
 // // StateHookExample
@@ -282,6 +286,10 @@ function App() {
 <CounterOne/> <br/><br/>
 <CounterTwo/> <br/><hr/>
 <UserForm/> <br/><hr/>
+
+<DataFetchingOne/> <br/><hr/>
+<DataFetchingTwo/> <br/><hr/>
+<DataFetchingThree/> <br/><hr/>
 
 
 
