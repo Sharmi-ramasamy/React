@@ -26,9 +26,11 @@ export class Task extends Component {
     render() {
         return (
             <div>
-            <p> Enter your name:{this.state.name} </p><input onChange={(event)=>(this.change(event))}/>
-            {/* <button onClick={this.changeClick}> Yes </button>
-            <button onClick={this.change}> No  </button> */}
+            <p data-testid="Name"> Enter your name:{this.state.name} </p>
+            <input onChange={(event)=>(this.change(event))}/>
+            <input type="text"></input>
+            <button  data-testid="click" onClick={this.changeClick}> Yes </button>
+            <button disabled data-testid="click2" onClick={this.change}> No  </button>
             </div>
         )
     }

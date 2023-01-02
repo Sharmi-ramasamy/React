@@ -96,6 +96,12 @@ import React from 'react'
 import PureComponentExample from './PureComponentExample';
 import FocusInput from './RefHook/FocusInput';
 import MemoParent from './MemoHook/MemoParent';
+import DocTittle from './CustomHooks/DocTittle';
+import DocTittleOne from './CustomHooks/DocTittleOne';
+import CounterOne from './CustomHooks/CounterOne';
+import CounterTwo from './CustomHooks/CounterTwo';
+import UserForm from './CustomHooks/UserForm';
+
 
 
 // // StateHookExample
@@ -268,8 +274,14 @@ function App() {
 {/* <FocusInput/> <br/><hr/> */}
 
 <MemoParent/> <br/><hr/>
-<FocusInput/>
+<FocusInput/> <br/><hr/>
 
+<DocTittle/> <br/>
+<DocTittleOne/> <br/><hr/>
+
+<CounterOne/> <br/><br/>
+<CounterTwo/> <br/><hr/>
+<UserForm/> <br/><hr/>
 
 
 
