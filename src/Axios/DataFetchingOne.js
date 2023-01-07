@@ -9,8 +9,8 @@ export default function DataFetchingOne() {
             console.log(res);
             setPosts(res.data)
         })
-        .catch(err=>{
-            console.log(err);
+        .catch(error=>{
+            console.log(error);
         })
     },[])
     

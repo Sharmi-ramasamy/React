@@ -1,4 +1,4 @@
-
+// Refs intro
 import React, { Component } from 'react'
 
 export class RefsDemo extends Component {
@@ -7,6 +7,12 @@ export class RefsDemo extends Component {
       this.inputRef=React.createRef()
     }
   
+    componentDidMount() {
+      this.inputRef.current.focus()
+      console.log(this.inputRef);
+
+    }
+    
     clickHandler=()=>{
         alert(this.inputRef.current.value)
     }

@@ -93,20 +93,20 @@ import ComponentCC from './ContextHook/ComponentCC';
 import ComponentX from './ContextHook/ComponentX';
 
 import React from 'react'
-import PureComponentExample from './PureComponentExample';
+
 import FocusInput from './RefHook/FocusInput';
 import MemoParent from './MemoHook/MemoParent';
 import DocTittle from './CustomHooks/DocTittle';
 import DocTittleOne from './CustomHooks/DocTittleOne';
 import CounterOne from './CustomHooks/CounterOne';
 import CounterTwo from './CustomHooks/CounterTwo';
-import UserForm from './CustomHooks/UserForm';
+
 
 import DataFetchingOne from './Axios/DataFetchingOne';
 import DataFetchingTwo from './Axios/DataFetchingTwo';
 import DataFetchingThree from './Axios/DataFetchingThree';
 
-
+import  A  from './A1';
 
 // // StateHookExample
 // import Component1 from './StateHookExample/Component1';
@@ -140,7 +140,7 @@ function App() {
     {/* composing component */}
   
 
-     {/* <Cars brand="Ford"/> */}
+     <Cars brand="Ford"/>
      {/* <Clock date={new Date()}/> */}
      {/* <Clock2 date={new Date()}/> */}
      {/* <Clock3/> */}
@@ -274,7 +274,6 @@ function App() {
 {/* <AddTwo/> */}
 
 
-{/* <PureComponentExample/> */}
 {/* <FocusInput/> <br/><hr/> */}
 
 <MemoParent/> <br/><hr/>
@@ -285,12 +284,12 @@ function App() {
 
 <CounterOne/> <br/><br/>
 <CounterTwo/> <br/><hr/>
-<UserForm/> <br/><hr/>
+
 
 <DataFetchingOne/> <br/><hr/>
 <DataFetchingTwo/> <br/><hr/>
 <DataFetchingThree/> <br/><hr/>
-
+<A/>
 
 
 
